@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Life Skill Komputer</title>
+
+  <!-- TAILWIND CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- SWIPER CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <style>
+    .swiper-slide img {
+      border-radius: 1rem;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #2563eb; /* Tailwind blue-600 */
+      font-weight: bold;
+      transform: scale(1.5);
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      color: #1d4ed8; /* Tailwind blue-700 */
+    }
+  </style>
+</head>
+<body class="bg-gray-100 py-10 px-4">
+
+  <h1 class="text-4xl font-extrabold text-center mb-10 text-blue-700">"Keseruan apa aja sih selam kamu belajar di Life Skill Komputer ?!"</h1>
+
+  <div class="swiper mySwiper max-w-7xl mx-auto">
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide bg-white rounded-3xl p-6 shadow-lg w-[350px] h-[500px] flex flex-col justify-between">
+        <a href="https://www.typingclub.com/" target="_blank">
+          <img src="foto 1.png" alt="Mondok Aja" class="w-full h-[360px] object-cover mb-4" />
+          <p class="text-center text-xl font-bold text-gray-800 hover:text-blue-600">“Ngetik Ngebut Tanpa Lihat Keyboard? Bisa Kok!”</p>
+        </a>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide bg-white rounded-3xl p-6 shadow-lg w-[350px] h-[500px] flex flex-col justify-between">
+        <a href="https://ajigunawan.wordpress.com/tugas/tugas-praktek-microsoft-word/" target="_blank">
+          <img src="foto 2.jpg" alt="Metaverse" class="w-full h-[360px] object-cover mb-4" />
+          <p class="text-center text-xl font-bold text-gray-800 hover:text-blue-600">"Belajar Olah data Pakai Word dan PPT Siapa takut ?"</p>
+        </a>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide bg-white rounded-3xl p-6 shadow-lg w-[350px] h-[500px] flex flex-col justify-between">
+        <a href="https://www.canva.com/design/DAGs4Y-NwGs/CcybD7LC-CpRpJ7Y0u_zZA/edit?utm_content=DAGs4Y-NwGs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
+          <img src="foto 3.jpg" alt="Kelas Desain" class="w-full h-[360px] object-cover mb-4" />
+          <p class="text-center text-xl font-bold text-gray-800 hover:text-blue-600">Mau Berkreasi dengan design ? Bisa kok</p>
+        </a>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="swiper-slide bg-white rounded-3xl p-6 shadow-lg w-[350px] h-[500px] flex flex-col justify-between">
+        <a href="https://blockly.games/" target="_blank">
+          <img src="foto 4.jpg" alt="Santri Ngaos" class="w-full h-[360px] object-cover mb-4" />
+          <p class="text-center text-xl font-bold text-gray-800 hover:text-blue-600">Belajar coding dasar siapa takut ?</p>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Navigasi -->
+    <div class="flex justify-between items-center mt-6 px-10">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+
+  <!-- SWIPER SCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      breakpoints: {
+        640: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+        1280: { slidesPerView: 4 }
+      }
+    });
+  </script>
+
+</body>
+</html>
